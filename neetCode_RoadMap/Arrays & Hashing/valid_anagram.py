@@ -12,16 +12,16 @@ class Solution(object):
         s_Object = {}
         t_Object = {}
         
-        # for letter in s:
-        #     if letter in s_Object:
-        #         s_Object[letter] += 1
-        #     else:
-        #         s_Object[letter] = 1
-        # for letter in t:
-        #     if letter in t_Object:
-        #         t_Object[letter] += 1
-        #     else:
-        #         t_Object[letter] = 1
+        for letter in s:
+            if letter in s_Object:
+                s_Object[letter] += 1
+            else:
+                s_Object[letter] = 1
+        for letter in t:
+            if letter in t_Object:
+                t_Object[letter] += 1
+            else:
+                t_Object[letter] = 1
         
         return s_Object == t_Object
 
